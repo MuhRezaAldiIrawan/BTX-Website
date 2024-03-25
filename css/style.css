@@ -307,13 +307,13 @@
       width: 100%; /* Membuat gambar responsive dan memenuhi lebar container */
       height: auto; /* Menjaga rasio aspek gambar */
     }
+    
   }
 
 /*** Carousel Hero Header Start ***/
 .carousel-header .carousel-control-prev,
 .carousel-header .carousel-control-next {
     background: transparent;
-    margin-left: 50p;
 }
 
 .carousel-header .carousel-control-prev .carousel-control-prev-icon {
@@ -351,7 +351,8 @@
 
 .carousel-header .carousel-inner .carousel-item {
     position: relative;
-    min-height: 100vh 
+    min-height: 100vh;
+
     
 }
 
@@ -360,6 +361,7 @@
     width: 100%;
     height: 90%;
     object-fit: cover;
+
 }
 
 .carousel-header .carousel-inner .carousel-item .carousel-caption  {
@@ -375,6 +377,7 @@
     text-align: start;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
     background-size: cover;
+    
 }
 
 .caption-btx {
@@ -406,7 +409,24 @@
         height: 700px;
         margin-top: -100px;
         flex: 0 0 100%;
+        
+    }
 
+    .carousel-item {
+        position: relative;
+        display: none;
+        float: left;
+        width: 100%;
+        margin-right: -100%;
+        backface-visibility: hidden;
+        transition: transform 0.6s ease-in-out;
+        margin-bottom: 25%;
+      }
+
+    .carousel-header .carousel-inner .carousel-item {
+        position: relative;
+        min-height: 100vh;
+        
     }
 
     .btn-hover-bg{
