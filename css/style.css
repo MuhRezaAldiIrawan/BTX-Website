@@ -227,28 +227,6 @@
     opacity: 1;
 }
 
-
-/* @media (min-width: 1200px){
-    .caption-btx p {
-        font-size: 20px;
-        margin-bottom: none;
-    }
-
-    .welcome-btx{
-        font-size: medium;
-    }
-
-    .deliver-btx{
-        font-size: 50px;
-        margin-top: opx;
-    }
-
-    .caption-btn{
-        font-size: small;
-    }
-
-} */
-
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
